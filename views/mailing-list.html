@@ -4,36 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Parishi Jain">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Duquesne Incline Web Development Project">
-    <title>Duquesne Incline</title>
-    <link rel="stylesheet" href="static/style.css">   
+    <meta name="keywords" content="Duquesne Incline, Mailing List, Newsletter">
+    <meta name="description" content="Join the Duquesne Incline mailing list for updates and promotions">
+    <title>Join Our Mailing List | Duquesne Incline</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/style.css">
 </head>
-<body style="font-family: 'Roboto'">
-    <header>
-        <h1 id="webname">Duquesne Incline</h1>
-        <img src="../static/duquesneincline.jpg" alt="Duquesne Incline Image" width="500px" height="300px">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="plan-trip.html">Plan Your Trip</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List</a>
-            <a href="about-us.html">About the Incline</a>
-        </nav>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="../static/DuqInclineLogo.png" alt="Duquesne Incline Logo" class="site-logo">
+                    <h1 class="site-title">Duquesne Incline</h1>
+                </div>
+                <p class="site-tagline">Pittsburgh's Historic Landmark Since 1877</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plan-trip.html">Plan Visit</a></li>
+                    <li><a href="gift-shop.html">Gift Shop</a></li>
+                    <li><a href="mailing-list.html" class="active">Newsletter</a></li>
+                    <li><a href="about-us.html">Our History</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h3>Mailing Address</h3>
-        <p>1220 Grandview Ave.<br>
-        Pittsburgh, PA 15211</p>
+    <!-- Main Content -->
+    <main class="mailing-list-container">
+        <div class="mailing-list-intro">
+            <h2 class="section-heading">Join Our Mailing List</h2>
+            <p>Stay updated with the latest news, events, and special promotions from the Duquesne Incline!</p>
+        </div>
+        
+        <form id="mailingListForm" class="mailing-list-form">
+            <!-- Name Field -->
+            <div class="form-group">
+                <label for="name" class="required">Name</label>
+                <input type="text" id="name" name="name" required minlength="2" maxlength="50">
+                <span id="nameError" class="error-message">Please enter your name</span>
+            </div>
+            
+            <!-- Email Field -->
+            <div class="form-group">
+                <label for="email" class="required">Email Address</label>
+                <input type="email" id="email" name="email" required>
+                <span id="emailError" class="error-message">Please enter a valid email address</span>
+            </div>
+            
+            <!-- SMS Opt-in Checkbox -->
+            <div class="form-group">
+                <div class="checkbox-group">
+                    <input type="checkbox" id="smsOptIn" name="smsOptIn">
+                    <label for="smsOptIn">I would like to receive messages via SMS text</label>
+                </div>
+            </div>
+            
+            <!-- Mobile Phone Field -->
+            <div class="form-group">
+                <label for="phone">Mobile Phone</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" minlength="10" maxlength="10">
+                <span id="phoneError" class="error-message">Please enter a valid 10-digit phone number</span>
+            </div>
+            
+            <!-- Zip Code Field -->
+            <div class="form-group">
+                <label for="zip">Zip Code</label>
+                <input type="text" id="zip" name="zip" pattern="[0-9]{5}" minlength="5" maxlength="5">
+                <span id="zipError" class="error-message">Please enter a valid 5-digit zip code</span>
+            </div>
+            
+            <!-- Submit Button -->
+            <button type="submit" class="submit-btn">Join Now</button>
+        </form>
+    </main>
 
-        <h3>Wheelchair Accessibility</h3>
-        <p>The Duquesne Incline’s upper station is wheelchair accessible. 
-        Visitors requiring accessibility accommodations are encouraged to use the entrance at Grandview Avenue.</p>
-    </body>
-
-    <footer>
-        <p id="copyYear">Designed and coded by Parishi Jain &copy;</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About the Incline</h3>
+                <p>The Duquesne Incline is maintained and operated by the Society for the Preservation of the Duquesne Heights Incline, a non-profit organization dedicated to preserving this historic landmark.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plan-trip.html">Plan Your Visit</a></li>
+                    <li><a href="gift-shop.html">Gift Shop</a></li>
+                    <li><a href="about-us.html">Our History</a></li>
+                </ul>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2025 Duquesne Incline</p>
+                <p>Designed by Parishi Jain</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Form validation
+        document.getElementById('mailingListForm').addEventListener('submit', function(e) {
+            let isValid = true;
+            
+            // Validate name
+            const name = document.getElementById('name');
+            if (!name.value.trim()) {
+                document.getElementById('nameError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('nameError').style.display = 'none';
+            }
+            
+            // Validate email
+            const email = document.getElementById('email');
+            if (!email.value.trim() || !email.validity.valid) {
+                document.getElementById('emailError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('emailError').style.display = 'none';
+            }
+            
+            // Validate phone if provided
+            const phone = document.getElementById('phone');
+            if (phone.value && !phone.validity.valid) {
+                document.getElementById('phoneError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('phoneError').style.display = 'none';
+            }
+            
+            // Validate zip if provided
+            const zip = document.getElementById('zip');
+            if (zip.value && !zip.validity.valid) {
+                document.getElementById('zipError').style.display = 'block';
+                isValid = false;
+            } else {
+                document.getElementById('zipError').style.display = 'none';
+            }
+            
+            if (!isValid) {
+                e.preventDefault();
+            }
+        });
+    </script>
 </body>
 </html>

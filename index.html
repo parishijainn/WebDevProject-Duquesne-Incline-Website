@@ -4,51 +4,201 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Parishi Jain">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Duquesne Incline Web Development Project">
+    <meta name="keywords" content="Carnegie Mellon University, Information Systems, Duquesne Incline, Pittsburgh">
+    <meta name="description" content="Experience the historic Duquesne Incline and see breathtaking views of downtown Pittsburgh.">
     <title>Duquesne Incline</title>
-    <link rel="stylesheet" href="static/style.css">   
+    
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="static/style.css">
 </head>
-<body onload="addYear(); greetingFunc();">
-    <header>
-        <h1 id="webname">Duquesne Incline</h1>
-        <img src="static/duquesneincline.jpg" alt="Duquesne Incline Image" width="500px" height = "300px">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="views/plan-trip.html">Plan Your Trip</a>
-            <a href="views/gift-shop.html">Gift Shop</a>
-            <a href="views/mailing-list.html">Join the Mailing List</a>
-            <a href="views/about-us.html">About the Incline</a>
-        </nav>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="static/DuqInclineLogo.png" alt="Duquesne Incline Logo" class="site-logo">
+                    <h1 class="site-title">Duquesne Incline</h1>
+                </div>
+                <p class="site-tagline">Pittsburgh's Historic Landmark Since 1877</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="views/plan-trip.html">Plan Visit</a></li>
+                    <li><a href="views/gift-shop.html">Gift Shop</a></li>
+                    <li><a href="views/mailing-list.html">Newsletter</a></li>
+                    <li><a href="views/about-us.html">Our History</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </nav>
+        </div>
     </header>
-    <div class="main">
-        <h2>Experience one of Pittsburgh's biggest historic sites... The Duquesne Incline</h2>
-        <p>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. 
-            Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars. Now you can visit the interior of the incline and watch the machinery while it operates. 
-            The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.</p>
-        
-        <h3>Address</h3>
-        <p>1197 West Carson Street, Pittsburgh, PA 15219</p>
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Experience Pittsburgh's Most Spectacular Views</h2>
+            <p>Ride a piece of history to breathtaking panoramic vistas</p>
+            <a href="views/plan-trip.html" class="cta-button">Plan Your Visit</a>
+        </div>
+    </section>
 
-        <h3>Hours of Operation</h3>
-        <p>Everyday from: 6:30 A.M to 12:30 A.M</p>
-        
-        <h3>Fares</h3>
-        <ul>
-            <li><strong>Adults (12-64):</strong> $2.50 one way | $5.00 round trip</li>
-            <li><strong>Children (6-11):</strong> $1.25 one way | $2.50 round trip</li>
-            <li><strong>Students (UPitt, CMU, and Chatham University):</strong> Free with proper ID</li>
-            <li><strong>Adults (Group):</strong> $1.75 one way | $3.50 round trip</li>
-            <li><strong>Children (Group):</strong> $1.00 one way | $1.75 round trip</li>
-        </ul>
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Primary Content Column -->
+            <div class="primary-content">
+                <!-- Image Gallery -->
+                <div class="image-gallery">
+                    <div class="gallery-main">
+                        <img src="static/duquesneincline.jpg" alt="Duquesne Incline daytime view" id="main-image">
+                    </div>
+                    <div class="gallery-thumbnails">
+                        <img src="static/duquesneincline.jpg" alt="Daytime view" class="thumbnail active" data-target="static/duquesneincline.jpg">
+                        <img src="static/duquesneincline1.jpg" alt="Interior view" class="thumbnail" data-target="static/duquesneincline1.jpg">
+                        <img src="static/duquesneincline2.webp" alt="Night view" class="thumbnail" data-target="static/duquesneincline2.webp">
+                    </div>
+                </div>
+                
+                <!-- Welcome Section -->
+                <section class="welcome-section">
+                    <h2 class="section-heading">Welcome to the Duquesne Incline</h2>
+                    <p>Take a step back in time on a century-old cable car and see the best views of downtown Pittsburgh while riding one of the few remaining inclines in the country. Opened on May 20, 1877, the Duquesne Incline was rescued and restored by a group of local residents in 1963 and still delights residents and visitors with its original, elegant, wooden cable cars.</p>
+                    <p>Now you can visit the interior of the incline and watch the machinery while it operates. The Duquesne Incline's upper station houses a museum of Pittsburgh history, including photos and a storehouse of information on inclines from around the world. Unusual Pittsburgh souvenirs, maps and photos can be found at the gift shop.</p>
+                </section>
+                
+                <!-- Fares Section -->
+                <section class="fares-section">
+                    <h2 class="section-heading">Fares & Tickets</h2>
+                    <div class="fares-grid">
+                        <div class="fare-card">
+                            <h3>General Admission</h3>
+                            <ul class="fare-list">
+                                <li>Adults (12-64): <span>$2.50 / $5.00</span></li>
+                                <li>Children (6-11): <span>$1.25 / $2.50</span></li>
+                                <li>Under 5: <span>FREE</span></li>
+                            </ul>
+                        </div>
+                        <div class="fare-card">
+                            <h3>Special Rates</h3>
+                            <ul class="fare-list">
+                                <li>Seniors (65+): <span>FREE with ID</span></li>
+                                <li>Students: <span>FREE with ID</span></li>
+                                <li>Groups (10+): <span>Discounted</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <p class="fare-note">* Prices shown are one-way / round-trip. We accept cash and Port Authority passes.</p>
+                </section>
+            </div>
+            
+            <!-- Sidebar Column -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3>Visit Us</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.599555224749!2d-80.01978668460335!3d40.43986517936242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af2cb5bc9b%3A0x2cd85a159be45cad!2s1197%20W%20Carson%20St%2C%20Pittsburgh%2C%20PA%2015219%2C%20USA!5e0!3m2!1sen!2skr!4v1617624878138!5m2!1sen!2skr" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <address>
+                        <strong>Parking Address:</strong><br>
+                        1197 West Carson Street<br>
+                        Pittsburgh, PA 15219
+                    </address>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Hours of Operation</h3>
+                    <ul class="hours-list">
+                        <li><span>Mon-Fri:</span> 5:30 AM - 12:30 AM</li>
+                        <li><span>Sat:</span> 5:30 AM - 12:30 AM</li>
+                        <li><span>Sun/Holidays:</span> 5:30 AM - 12:30 AM</li>
+                    </ul>
+                    <p class="hours-note">Open 365 days a year!</p>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><i class="material-icons">phone</i> (412) 381-1665</li>
+                        <li><i class="material-icons">email</i> <a href="mailto:info@duquesneincline.org">info@duquesneincline.org</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
 
-
-    </div>
-    <footer>
-        <p id="copyYear"> Designed and coded by Parishi Jain &copy</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About the Incline</h3>
+                <p>The Duquesne Incline is maintained and operated by the Society for the Preservation of the Duquesne Heights Incline, a non-profit organization dedicated to preserving this historic landmark.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="views/plan-trip.html">Plan Your Visit</a></li>
+                    <li><a href="views/gift-shop.html">Gift Shop</a></li>
+                    <li><a href="views/about-us.html">Our History</a></li>
+                </ul>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2025 Duquesne Incline</p>
+                <p>Designed by Parishi Jain</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Image gallery functionality
+        const thumbnails = document.querySelectorAll('.thumbnail');
+        const mainImage = document.getElementById('main-image');
+        
+        thumbnails.forEach(thumb => {
+            thumb.addEventListener('click', function() {
+                // Update main image
+                mainImage.src = this.dataset.target;
+                mainImage.alt = this.alt;
+                
+                // Update active thumbnail
+                document.querySelector('.thumbnail.active').classList.remove('active');
+                this.classList.add('active');
+            });
+        });
+
+        // Simple image rotation for the hero
+        const hero = document.querySelector('.hero');
+        const images = ['static/duquesneincline.jpg', 'static/duquesneincline1.jpg', 'static/duquesneincline2.webp'];
+        let currentIndex = 0;
+        
+        function rotateHeroImage() {
+            currentIndex = (currentIndex + 1) % images.length;
+            hero.style.backgroundImage = `linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(${images[currentIndex]})`;
+        }
+        
+        // Rotate every 8 seconds
+        setInterval(rotateHeroImage, 8000);
+    </script>
 </body>
 </html>

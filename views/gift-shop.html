@@ -4,38 +4,226 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Parishi Jain">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Duquesne Incline Web Development Project">
-    <title>Duquesne Incline</title>
-    <link rel="stylesheet" href="static/style.css">   
+    <meta name="keywords" content="Duquesne Incline, Gift Shop, Pittsburgh Souvenirs">
+    <meta name="description" content="Unique gifts and souvenirs at the Duquesne Incline">
+    <title>Gift Shop | Duquesne Incline</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/style.css">
+    <style>
+        /* Gift Shop Specific Styles */
+        .gift-shop-container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        
+        .gift-intro {
+            margin-bottom: 2rem;
+            text-align: center;
+        }
+        
+        .gift-items {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .gift-card {
+            background-color: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .gift-card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .gift-image {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .gift-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+        
+        .gift-card:hover .gift-image img {
+            transform: scale(1.05);
+        }
+        
+        .gift-info {
+            padding: 1.5rem;
+        }
+        
+        .gift-info h3 {
+            color: var(--brown);
+            margin-top: 0;
+            margin-bottom: 0.5rem;
+        }
+        
+        .gift-info p {
+            color: var(--dark-text);
+            margin-bottom: 0;
+        }
+        
+        /* Full-width gift shop image */
+        .gift-shop-image {
+            width: 100%;
+            margin: 3rem 0;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            .gift-items {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
-<body style="font-family: 'Roboto'">
-    <header>
-        <h1 id="webname">Duquesne Incline</h1>
-        <img src="../static/duquesneincline.jpg" alt="Duquesne Incline Image" width="500px" height="300px">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="plan-trip.html">Plan Your Trip</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List</a>
-            <a href="about-us.html">About the Incline</a>
-        </nav>
+
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="../static/DuqInclineLogo.png" alt="Duquesne Incline Logo" class="site-logo">
+                    <h1 class="site-title">Duquesne Incline</h1>
+                </div>
+                <p class="site-tagline">Pittsburgh's Historic Landmark Since 1877</p>
+            </div>
+            
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plan-trip.html">Plan Visit</a></li>
+                    <li><a href="gift-shop.html" class="active">Gift Shop</a></li>
+                    <li><a href="mailing-list.html">Newsletter</a></li>
+                    <li><a href="about-us.html">Our History</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </nav>
+        </div>
     </header>
 
-    <body>
-        <h3>Gift Shop Offerings</h3>
-        <p>We offer many one-of-a-kind items that were custom-made for the Incline!</p>
-        <ul>
-            <li>Shot glasses (including a slanted one!)</li>
-            <li>Handmade Incline wooden ornament (a big seller and is only available here)</li>
-            <li>A full assortment of Wendell August Forge metal plates</li>
-            <li>Custom-designed shirts available in youth and adult sizes</li>
-            <li>One of the best selections of postcards in the city</li>
-        </ul>
-    </body>
+    <!-- Main Content -->
+    <main class="gift-shop-container">
+        <div class="gift-intro">
+            <h2 class="section-heading">Gift Shop Offerings</h2>
+            <p>We offer many one-of-a-kind items that were custom-made for the Incline!</p>
+        </div>
+        
+        <!-- Gift Shop Overview Image -->
+        <img src="../static/shop.jpg" alt="Duquesne Incline Gift Shop" class="gift-shop-image">
+        
+        <!-- Gift Items Grid -->
+        <div class="gift-items">
+            <!-- Shot Glasses -->
+            <div class="gift-card">
+                <div class="gift-image">
+                    <img src="../static/shotglasses.jpg" alt="Duquesne Incline Shot Glasses">
+                </div>
+                <div class="gift-info">
+                    <h3>Slanted Shot Glasses</h3>
+                    <p>Our famous incline-themed shot glasses - including our signature slanted design!</p>
+                </div>
+            </div>
+            
+            <!-- Wooden Ornament -->
+            <div class="gift-card">
+                <div class="gift-image">
+                    <img src="../static/ornament.jpg" alt="Handmade Wooden Ornament">
+                </div>
+                <div class="gift-info">
+                    <h3>Handmade Wooden Ornament</h3>
+                    <p>Exclusive to our gift shop - a best seller every season.</p>
+                </div>
+            </div>
+            
+            <!-- Metal Plates -->
+            <div class="gift-card">
+                <div class="gift-image">
+                    <img src="../static/plates.jpg" alt="Wendell August Forge Metal Plates">
+                </div>
+                <div class="gift-info">
+                    <h3>Metal Plates Collection</h3>
+                    <p>Beautiful Wendell August Forge metal plates featuring Pittsburgh scenes.</p>
+                </div>
+            </div>
+            
+            <!-- T-Shirts -->
+            <div class="gift-card">
+                <div class="gift-image">
+                    <img src="../static/tshirt.jpeg" alt="Duquesne Incline T-Shirts">
+                </div>
+                <div class="gift-info">
+                    <h3>Custom T-Shirts</h3>
+                    <p>Available in youth and adult sizes with unique Incline designs.</p>
+                </div>
+            </div>
+            
+            <!-- Postcards -->
+            <div class="gift-card">
+                <div class="gift-image">
+                    <img src="../static/postcard.avif" alt="Pittsburgh Postcards">
+                </div>
+                <div class="gift-info">
+                    <h3>Postcard Collection</h3>
+                    <p>One of the best selections of Pittsburgh postcards in the city.</p>
+                </div>
+            </div>
+        </div>
+    </main>
 
-    <footer>
-        <p id="copyYear">Designed and coded by Parishi Jain &copy;</p>
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About the Incline</h3>
+                <p>The Duquesne Incline is maintained and operated by the Society for the Preservation of the Duquesne Heights Incline, a non-profit organization dedicated to preserving this historic landmark.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plan-trip.html">Plan Your Visit</a></li>
+                    <li><a href="gift-shop.html">Gift Shop</a></li>
+                    <li><a href="about-us.html">Our History</a></li>
+                </ul>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2025 Duquesne Incline</p>
+                <p>Designed by Parishi Jain</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>

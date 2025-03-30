@@ -4,32 +4,217 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Parishi Jain">
-    <meta name="keywords" content="Carnegie Mellon University, Information Systems">
-    <meta name="description" content="Duquesne Incline Web Development Project">
-    <title>Duquesne Incline</title>
-    <link rel="stylesheet" href="static/style.css">   
+    <meta name="keywords" content="Duquesne Incline, History, Pittsburgh Landmark">
+    <meta name="description" content="Learn about the rich history of the Duquesne Incline, a Pittsburgh landmark since 1877">
+    <title>About the Incline | Duquesne Incline</title>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Material Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="../static/style.css">
 </head>
-<body style="font-family: 'Roboto'">
-    <header>
-        <h1 id="webname">Duquesne Incline</h1>
-        <img src="../static/duquesneincline.jpg" alt="Duquesne Incline Image" width="500px" height = "300px">
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="plan-trip.html">Plan Your Trip</a>
-            <a href="gift-shop.html">Gift Shop</a>
-            <a href="mailing-list.html">Join the Mailing List</a>
-            <a href="about-us.html">About the Incline</a>
-        </nav>
-    </header>
-    <body>
-        <p>The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.
 
-            Although plans for a freight and passenger incline are known to have existed much earlier, financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. Eventually, of course, difficulties were overcome and the Incline was built. It was opened to the public May 20, 1877. The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. Mr. Diescher, an engineer, had become the country's foremost builder of inclines. He was also to design and build most of those that followed.
+<body>
+    <!-- Header with Navigation -->
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-container">
+                <div class="logo-wrapper">
+                    <img src="../static/DuqInclineLogo.png" alt="Duquesne Incline Logo" class="site-logo">
+                    <h1 class="site-title">Duquesne Incline</h1>
+                </div>
+                <p class="site-tagline">Pittsburgh's Historic Landmark Since 1877</p>
+            </div>
             
-            At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.</p>
-    </body>
-    <footer>
-        <p id="copyYear"> Designed and coded by Parishi Jain &copy</p>
+            <nav class="main-nav">
+                <ul class="nav-list">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plan-trip.html">Plan Visit</a></li>
+                    <li><a href="gift-shop.html">Gift Shop</a></li>
+                    <li><a href="mailing-list.html">Newsletter</a></li>
+                    <li><a href="about-us.html" class="active">Our History</a></li>
+                </ul>
+                <button class="mobile-menu-btn">
+                    <span class="menu-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="content-container">
+            <!-- Primary Content Column -->
+            <div class="primary-content">
+                <section class="history-section">
+                    <h2 class="section-heading">Early History</h2>
+                    <p>The Duquesne Incline is one of those which follows very closely the tracks of an early coal hoist. Old newspapers indicate the existence of such a conveyance as early as 1854. Residents apparently referred to it as "Kirk Lewis' incline" and located it on the present site of The Duquesne Incline's Upper Station. Grandview Avenue was then the High Street, and the area was just beginning to be converted from farmland to homesites. This pleasantly-situated acreage was an excellent area to absorb some of the expanding population of the city, but the problem of easy access was still to be solved.</p>
+                    <p>Although plans for a freight and passenger incline are known to have existed much earlier, financial backing was exceedingly hard to find--even the modest sum of $47,000--and actual construction was delayed. Eventually, of course, difficulties were overcome and the Incline was built. It was opened to the public May 20, 1877. The Duquesne Incline was the first Pittsburgh incline designed and built by Samuel Diescher, for Kirk Bigham and Associates. Mr. Diescher, an engineer, had become the country's foremost builder of inclines. He was also to design and build most of those that followed.</p>
+                    <p>At the time of its public opening, it was one of four inclined planes serving the summit of Coal Hill, which later came to be known as Mount Washington. The Duquesne Incline was operated, from 1877 until 1962 by The Duquesne Inclined Plane Company. From 1964 until the present, the Incline has been operated by the Society for the Preservation of The Duquesne Heights Incline; it has been owned by the Port Authority of Allegheny County.</p>
+                </section>
+
+                <section class="society-section">
+                    <h2 class="section-heading">The Society for the Preservation of the Duquesne Heights Incline</h2>
+                    <p>The Society for the Preservation of the Duquesne Heights Incline was formed in 1964 by the Duquesne Heights/Mount Washington neighborhood group that had rescued, repaired, and reopened the Incline in 1963. The purpose was to continue to restore and rehabilitate the cars, equipment, and both stations, and to establish the entire operation as a reliable commuter facility and a popular visitor attraction. Memberships in the society are available, call for details.</p>
+                </section>
+
+                <section class="facts-section">
+                    <h2 class="section-heading">Facts</h2>
+                    <div class="facts-grid">
+                        <div class="fact-card">
+                            <h3>Historical Facts</h3>
+                            <ul class="fact-list">
+                                <li><span>Opened to Public:</span> May 20, 1877</li>
+                                <li><span>Cost to Build:</span> $47,000</li>
+                                <li><span>Original Operator:</span> Duquesne Inclined Plane Company</li>
+                            </ul>
+                        </div>
+                        <div class="fact-card">
+                            <h3>Technical Specifications</h3>
+                            <ul class="fact-list">
+                                <li><span>Length of Track:</span> 794 feet</li>
+                                <li><span>Elevation:</span> 400 feet</li>
+                                <li><span>Grade:</span> 30.5 degrees</li>
+                                <li><span>Speed:</span> 6 miles per hour</li>
+                                <li><span>Passenger Capacity:</span> 18 per car</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="video-section">
+                    <h2 class="section-heading">Experience the Incline</h2>
+                    <div class="video-container">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/bSLvrz5GraI?si=3D-In9BwkRZMUFtH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                    </div>
+                </section>
+
+                <!-- New Resources Section -->
+                <section class="resources-section">
+                    <h2 class="section-heading">Explore More About the Incline</h2>
+                    <div class="resources-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Resource</th>
+                                    <th>Description</th>
+                                    <th>Link</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <img src="../static/Wikipedia-Logo.png" alt="Wikipedia Logo" class="resource-img">
+                                    </td>
+                                    <td>
+                                        <h3>Wikipedia Article</h3>
+                                        <p>Comprehensive information about the Duquesne Incline's history, technical details, and cultural significance.</p>
+                                    </td>
+                                    <td>
+                                        <a href="https://en.wikipedia.org/wiki/Duquesne_Incline" class="resource-link" target="_blank">Visit Page</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="../static/youtube.avif" alt="YouTube Video Thumbnail" class="resource-img">
+                                    </td>
+                                    <td>
+                                        <h3>Virtual Ride Experience</h3>
+                                        <p>Take a virtual ride on the incline with this YouTube video showcasing the breathtaking views.</p>
+                                    </td>
+                                    <td>
+                                        <a href="https://youtu.be/TyfUdaMItSI?si=rjitbaoRGhlrVOeP" class="resource-link" target="_blank">Watch Video</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <img src="../static/facebook.jpg" alt="Facebook Photos Preview" class="resource-img">
+                                    </td>
+                                    <td>
+                                        <h3>Photo Gallery</h3>
+                                        <p>Browse our Facebook photo gallery to see visitor photos, special events, and historical images.</p>
+                                    </td>
+                                    <td>
+                                        <a href="https://www.facebook.com/TheDuquesneIncline/photos/" class="resource-link" target="_blank">View Photos</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+            
+            <!-- Sidebar Column -->
+            <aside class="sidebar">
+                <div class="sidebar-card">
+                    <h3>Visit Us</h3>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3036.599555224749!2d-80.01978668460335!3d40.43986517936242!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f6af2cb5bc9b%3A0x2cd85a159be45cad!2s1197%20W%20Carson%20St%2C%20Pittsburgh%2C%20PA%2015219%2C%20USA!5e0!3m2!1sen!2skr!4v1617624878138!5m2!1sen!2skr" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                    <address>
+                        <strong>Parking Address:</strong><br>
+                        1197 West Carson Street<br>
+                        Pittsburgh, PA 15219
+                    </address>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Hours of Operation</h3>
+                    <ul class="hours-list">
+                        <li><span>Mon-Fri:</span> 5:30 AM - 12:30 AM</li>
+                        <li><span>Sat:</span> 5:30 AM - 12:30 AM</li>
+                        <li><span>Sun/Holidays:</span> 5:30 AM - 12:30 AM</li>
+                    </ul>
+                    <p class="hours-note">Open 365 days a year!</p>
+                </div>
+                
+                <div class="sidebar-card">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-list">
+                        <li><i class="material-icons">phone</i> (412) 381-1665</li>
+                        <li><i class="material-icons">email</i> <a href="mailto:info@duquesneincline.org">info@duquesneincline.org</a></li>
+                    </ul>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-about">
+                <h3>About the Incline</h3>
+                <p>The Duquesne Incline is maintained and operated by the Society for the Preservation of the Duquesne Heights Incline, a non-profit organization dedicated to preserving this historic landmark.</p>
+            </div>
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="plan-trip.html">Plan Your Visit</a></li>
+                    <li><a href="gift-shop.html">Gift Shop</a></li>
+                    <li><a href="about-us.html">Our History</a></li>
+                </ul>
+            </div>
+            <div class="footer-credits">
+                <p>&copy; 2025 Duquesne Incline</p>
+                <p>Designed by Parishi Jain</p>
+            </div>
+        </div>
     </footer>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile menu toggle
+        document.querySelector('.mobile-menu-btn').addEventListener('click', function() {
+            document.querySelector('.nav-list').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
