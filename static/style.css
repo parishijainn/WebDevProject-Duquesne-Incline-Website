@@ -421,12 +421,16 @@ a {
 
 /* FAQ Section */
 .faq-question {
-    background-color: var(--cream);
+    /* background-color: var(--cream);
     color: var(--brown);
     margin: 0;
     cursor: pointer;
     position: relative;
-    transition: all 0.3s;
+    transition: all 0.3s; */
+    color: var(--brown);
+    margin: 1.5rem 0 0.5rem 0;
+    cursor: pointer;
+    font-size: 1.2rem;
 }
 
 /* Sidebar Components */
@@ -1037,5 +1041,133 @@ address {
 @media (min-width: 992px) {
     .things-grid {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+/* Group Visits Section */
+.group-visits-section {
+    margin: 3rem 0;
+}
+
+.group-visits-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+.group-visit-card {
+    background-color: white;
+    padding: 1.5rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    text-align: center;
+}
+
+.group-visit-card h3 {
+    color: var(--sage);
+    margin-bottom: 0.8rem;
+    font-size: 1.3rem;
+}
+
+.group-visit-card p {
+    margin-bottom: 1.2rem;
+}
+
+.schedule-btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background-color: var(--brown);
+    color: var(--light-text);
+    border-radius: 4px;
+    font-weight: 600;
+    transition: all 0.3s;
+    text-decoration: none;
+}
+
+.schedule-btn:hover {
+    background-color: var(--taupe);
+    transform: translateY(-2px);
+}
+
+@media (min-width: 768px) {
+    .group-visits-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.gift-shop-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.gift-intro {
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.gift-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.gift-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.gift-card:hover {
+    transform: translateY(-5px);
+}
+
+.gift-image {
+    height: 200px;
+    overflow: hidden;
+}
+
+.gift-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.gift-card:hover .gift-image img {
+    transform: scale(1.05);
+}
+
+.gift-info {
+    padding: 1.5rem;
+}
+
+.gift-info h3 {
+    color: var(--brown);
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+.gift-info p {
+    color: var(--dark-text);
+    margin-bottom: 0;
+}
+
+/* Full-width gift shop image */
+.gift-shop-image {
+    width: 100%;
+    margin: 3rem 0;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+@media (max-width: 768px) {
+    .gift-items {
+        grid-template-columns: 1fr;
     }
 }

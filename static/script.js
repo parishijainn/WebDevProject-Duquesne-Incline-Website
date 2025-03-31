@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
             document.querySelector('.nav-list').classList.toggle('active');
             this.classList.toggle('active');
         });
-    }
+    }s
 
     // Homepage specific functionality
     if (document.getElementById('main-image')) {

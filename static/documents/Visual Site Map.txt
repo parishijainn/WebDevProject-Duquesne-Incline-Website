@@ -1,0 +1,15 @@
+[Homepage]
+├── [Plan Your Visit]
+│   ├── Fares & Tickets
+│   ├── Field Trips
+│   ├── Group Visits (Bus/Schools/Patch)
+│   ├── City Tours
+│   └── Things To Do
+├── [Gift Shop]
+│   └── Featured Items
+├── [Newsletter]
+│   └── Subscription Form
+└── [Our History]
+    ├── Timeline
+    ├── Historical Facts
+    └── Multimedia Resources
